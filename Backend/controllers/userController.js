@@ -31,7 +31,7 @@ const signup = async (req, res) => {
 };
 // login controller
 const login = async (req, res) => {
-  try {
+  try { 
     const { email, password } = req.body;
 
     const user = await User.findOne({ email });
